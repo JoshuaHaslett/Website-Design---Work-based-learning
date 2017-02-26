@@ -6,7 +6,7 @@ body {
 .navBar{
     width: 100%;
     height:100%;
-    
+    margin-bottom: 15px;
 }
 
 .logo{
@@ -14,7 +14,9 @@ body {
 }
 
 .navButtonContainer{
-    text-align: center
+    width: 100%;
+    text-align: center;
+    border-top: 
 }
 
 .navButton{
@@ -25,7 +27,7 @@ body {
     border-radius: 5px;
     background: linear-gradient(black, grey);
     border: 2px solid grey;
-    color: white;    
+    color: white;     
 }
 
 .navButton:hover{
@@ -36,21 +38,97 @@ body {
     background: linear-gradient(blue, black); 
 }
 .slideShow{
-    margin-top: 20px;
-    height: 390px;
     width: 100%;
-    position: relative;
+    box-shadow: 0px 3px 10px black;
+
 }
 
-.slideImage{
+.item img{
     width: 100%;
-    position: absolute;
+    margin: 0;
+    top: 0;
+    
 }
 
-.slideText{
+.carousel-indicators li{
+}
+
+.panelContainer{
     width: 100%;
-    top: 15%;
+    height: 100%;
+    margin-top: 5px;
     text-align: center;
-    position: absolute;  
+    
+}
+
+.panel{
+    background-image: image("photo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.panel img{
+    width: 100%;
+    
+}
+
+
+.panel p{
+    position: absolute;
+    width: 100%;
+    bottom:0px;
+    background: rgba(0, 0, 0, 0.39);
     color: white;
+    margin: 0;
+    left: 0;
+    box-shadow: 0px 6px 10px black;
+}
+
+.panel .fa{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20%;
+    width: 10%;
+    color: white;
+}
+
+.bottomContainer{
+    width: 100%;
+    background: black;
+}
+
+.centre{
+    width: 100%;
+    height: 100%;
+    
+}
+.textContainer h1{
+    text-align: center;
+}
+
+.textContainer p{
+    text-align: center;
+}
+
+.displayPicture img{
+    width: 100%;
+}
+
+.goLeft{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.goRight{
+    width: 100%;
+    height: 100%;
+}
+
+.scrollContainer{
+    height: 100%;
+    width 100%;
+    background: black;
 }
