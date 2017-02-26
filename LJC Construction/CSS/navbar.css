@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBar{
+    width: 100%;
+    height:100%;
+    margin-bottom: 15px;
+}
+
+.logo{
+    text-align: center;
+}
+
+.navButtonContainer{
+    width: 100%;
+    text-align: center;
+    border-top: 
+}
+
+.navButton{
+    font-size: 20px;
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: linear-gradient(black, grey);
+    border: 2px solid grey;
+    color: white;     
+}
+
+.navButton:hover{
+    background: linear-gradient(blue, black); 
+}
+
+#selectedBtn{
+    background: linear-gradient(blue, black); 
+}
+.slideShow{
+    width: 100%;
+    box-shadow: 0px 3px 10px black;
+
+}
+
+.item img{
+    width: 100%;
+    margin: 0;
+    top: 0;
+    
+}
+
+.carousel-indicators li{
+}
+
+.panelContainer{
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    text-align: center;
+    
+}
+
+.panel{
+    background-image: image("photo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.panel img{
+    width: 100%;
+    
+}
+
+
+.panel p{
+    position: absolute;
+    width: 100%;
+    bottom:0px;
+    background: rgba(0, 0, 0, 0.39);
+    color: white;
+    margin: 0;
+    left: 0;
+    box-shadow: 0px 6px 10px black;
+}
+
+.panel .fa{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 20%;
+    width: 10%;
+    color: white;
+}
+
+.bottomContainer{
+    width: 100%;
+    background: black;
+}
+
+.centre{
+    width: 100%;
+    height: 100%;
+    
+}
+.textContainer h1{
+    text-align: center;
+}
+
+.textContainer p{
+    text-align: center;
+}
+
+.displayPicture img{
+    width: 100%;
+}
+
+.goLeft{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.goRight{
+    width: 100%;
+    height: 100%;
+}
+
+.scrollContainer{
+    height: 100%;
+    width 100%;
+    background: black;
+}
