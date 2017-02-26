@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navBar{
+    width: 100%;
+    height:100%;
+    
+}
+
+.logo{
+    text-align: center;
+}
+
+.navButtonContainer{
+    text-align: center
+}
+
+.navButton{
+    font-size: 20px;
+    margin-right: 5px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: linear-gradient(black, grey);
+    border: 2px solid grey;
+    color: white;    
+}
+
+.navButton:hover{
+    background: linear-gradient(blue, black); 
+}
+
+#selectedBtn{
+    background: linear-gradient(blue, black); 
+}
+.slideShow{
+    margin-top: 20px;
+    height: 390px;
+    width: 100%;
+    position: relative;
+}
+
+.slideImage{
+    width: 100%;
+    position: absolute;
+}
+
+.slideText{
+    width: 100%;
+    top: 15%;
+    text-align: center;
+    position: absolute;  
+    color: white;
+}
