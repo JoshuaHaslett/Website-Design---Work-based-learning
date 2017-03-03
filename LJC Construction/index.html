@@ -60,37 +60,29 @@
         <div class="panel col-sm-4"> <img src="Images/bathroom.jpg">
             <p>Refurbishments</p><i class="fa fa-lock" aria-hidden="true"></i> </div>
     </div>
-    
+    <div class="displayPicture"> <img src="Images/bathroom.jpg">
+        <h1>Project Name</h1> </div>
     <!--scroll work-->
     <div class="bottomContainer">
-        
         <div class="goLeft col-sm-2">
-            
+            <button>back</button>
         </div>
-        
         <div class="centre col-sm-8">
-            <div class="displayPicture">
-                <img src="Images/bathroom.jpg">
-            </div>
-            <div class="proejctImages">
-                <img src="Images/logo.jpg" alt="" class="col-sm-3">
-                <img src="Images/logo.jpg" alt="" class="col-sm-3">
-                <img src="Images/logo.jpg" alt="" class="col-sm-3">
-                <img src="Images/logo.jpg" alt="" class="col-sm-3">
-            </div>
+            <div class="proejctImages"> <img src="Images/logo.jpg" alt="" class="col-sm-3"> <img src="Images/logo.jpg" alt="" class="col-sm-3"> <img src="Images/logo.jpg" alt="" class="col-sm-3"> <img src="Images/logo.jpg" alt="" class="col-sm-3"> </div>
             <div class="textContainer">
-                <h1>Project Name</h1>
-                <p>Example work</p>
+                <p id="description">Example work fasdf askdfsdf asdjfkjsdfkl jasdfkj lasdfj dkasfj lasdkfjdasjfklasjdfk asd fjlasdfjkldjasfklasjdfkl jasdfkjasdj djdjasf kldjasf klasjdflk </p>
             </div>
         </div>
-        
-        <div class="goRight col-sm-2">
-               
-        </div>
-        
+        <div class="goRight col-sm-2"> </div>
+        <button id="next">next</button>
     </div>
-
-    
+    <script>
+        $(document).ready(function () {
+            $("#next").click(function () {
+                $("#description").text("Hello world!");
+            });
+        });
+    </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

@@ -56,8 +56,9 @@ body {
 .panelContainer{
     width: 100%;
     height: 100%;
-    margin-top: 5px;
+    margin-top: 010px;
     text-align: center;
+     overflow: hidden;
     
 }
 
@@ -94,26 +95,53 @@ body {
     color: white;
 }
 
+
+.displayPicture{
+    width: 100%;
+    position: relative;
+}
+.displayPicture img{
+    width: 100%;
+    position: relative;
+}
+
+.displayPicture h1{
+    position: absolute;
+    top: 0;
+     text-align: center;
+    width: 100%;
+    color: white;
+}
+
 .bottomContainer{
     width: 100%;
+    height: 100%;
     background: black;
+    overflow: hidden;
+    
 }
 
 .centre{
     width: 100%;
     height: 100%;
+    background: #1c1c1c
     
 }
 .textContainer h1{
     text-align: center;
+    color: white; 
 }
 
 .textContainer p{
     text-align: center;
+    color: white;
+    
 }
 
-.displayPicture img{
-    width: 100%;
+.proejctImages img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
 }
 
 .goLeft{
@@ -127,8 +155,3 @@ body {
     height: 100%;
 }
 
-.scrollContainer{
-    height: 100%;
-    width 100%;
-    background: black;
-}
