@@ -1,0 +1,69 @@
+.contactContainer{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    background: linear-gradient(white,black);
+    
+}
+.maps{
+    margin-top: 10px;
+    box-shadow: 0px 5px 20px black; 
+    height: 406px;
+    border-radius: 10px;
+}
+.masterPanel{
+    height: 100%;
+}
+.generalDetails{
+    overflow: hidden;
+    
+}
+.contactPanel{
+    margin-top: 10px;
+    height: 100%;
+    box-shadow: 0px 5px 20px black;  
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+h1{
+    width: 100%;
+    font-size: 24px;
+    text-align: center;
+    color: darkblue;
+}
+
+hr{
+    border-style: solid;
+    border-bottom-width: 1px;
+    margin: 0px 50px 0px 50px;
+    color: grey;
+    margin-bottom: 15px;
+}
+
+.contactPanel p {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mapContainer{
+    height: 100%;
+}
+
+form{
+    margin-top: 20px;
+}
+input{
+    width: 100%;
+}
+textarea {
+   resize: none;
+    width: 100%;
+    line-height: 5;
+    margin-bottom: 20px;
+}
+
