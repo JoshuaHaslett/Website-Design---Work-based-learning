@@ -10,21 +10,36 @@
     text-align: center;
 }
 
-.navButton{
+.buttonContainer{
+    height: 100%;
+    width: 100%; 
+    background: #353535;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.buttonContainer p{
     font-size: 20px;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background: linear-gradient(black, grey);
-    border: 2px solid grey;
-    color: white;     
-    text-align: center;    
+    margin-bottom: 0;
+    text-shadow: 0px 5px  5px black;
 }
 
-.navButton:hover{
-    background: linear-gradient(blue, black); 
+.buttonContainer:hover{
+    background: linear-gradient(black, #353535); 
 }
 
-#selectedBtn{
-    background: linear-gradient(blue, black); 
+#selected{
+    background: black; 
 }
+
+.leftNav{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.rightNav{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;  
+}
+
