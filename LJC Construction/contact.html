@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css"> </head>
+
+<body>
+    <!--Navbar-->
+    <div class="navBar">
+        <div class="logo"> <img src="Images/logo.jpg"> </div>
+        <div class="navButtonContainer col-sm-offset-2 col-sm-8">
+            <btn class="navButton col-sm-3 col-xs-12" href="">Home</btn>
+            <btn class="navButton col-sm-3 col-xs-12" href="" >Accreditation</btn>
+            <btn class="navButton col-sm-3 col-xs-12" href="">Testimonial</btn>
+            <btn class="navButton col-sm-3 col-xs-12" href="" id="selectedBtn">Contact</btn>
+        </div>
+    </div>
+    <!--body under nav bar-->
+    <div class="contactContainer">
+      <!--Map-->
+       <div id="map" class="col-sm-offset-2  col-sm-8 maps"></div>
+        <!--Panel content-->
+        <div class="contactPanel col-sm-offset-2  col-sm-8">
+           <h1>Address</h1> 
+           <p>
+                LJC (SW) Construction Ltd <br>
+                42 Whidborne Avenue <br>
+                Torquay <br>
+                South Devon <br>
+                TQ1 2PQ
+           </p>
+           <hr></hr>
+           <h1>Contact Information</h1> 
+           <p>
+                info@ljcconstruction.co.uk <br>
+                Tel: 01803 469671 <br>
+                Mobile: 07971 862175 <br>
+                VAT Reg No: 836 8954 71 <br>
+                Company Reg No: 5071855
+           </p>
+           
+        </div>
+    </div>
+    <!--Footer-->
+    <div class="footerBar">
+        <p>Copyright LJC Construction 2017 ©</p>
+    </div>
+    
+    <!--Scripts-->
+    <script>
+        function myMap() {
+            var myCenter = new google.maps.LatLng(50.462875, -3.494791);
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {center: myCenter, zoom: 10};
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+            var marker = new google.maps.Marker({position:myCenter});
+            marker.setMap(map);
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBseNEIZeIIOLxnme_258YBJDhVbS0Od5k&callback=myMap"></script>
+</body>
+
+</html>

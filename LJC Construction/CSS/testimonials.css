@@ -1,4 +1,4 @@
-.accreditationContainer{
+.testimonialsContainer{
     overflow: hidden;
     height: 100%;
     width: 100%;
@@ -6,28 +6,22 @@
     background: linear-gradient(white,black);
 }
 
-.accreditationEntry{
+.testimonialEntry{
     box-shadow: 0px 10px 30px black;
     overflow: hidden;
     margin-bottom: 30px;
     background: white;
-    border-radius: 10px;
 }
 
-.accreditationEntry img{
+.testimonialEntry p{
     margin-top: 40px;
+    font-size: 18px;
 }
 
-
-.accreditationEntry h1{
-    color: darkblue;
+.testimonialEntry h1{
+    color: gray;
     font-size: 20px;
-    margin-top: 20px;
-    text-align: center
+    margin-bottom: 40px;
+    text-align: right;
 }
 
-.accreditationEntry p{
-    margin-bottom: 40px;
-    text-align: center;
-     
-}
