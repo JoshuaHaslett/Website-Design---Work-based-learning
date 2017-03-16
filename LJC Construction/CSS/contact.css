@@ -53,7 +53,7 @@ hr{
 }
 
 form{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 input{
     width: 100%;
@@ -65,3 +65,6 @@ textarea {
     margin-bottom: 20px;
 }
 
+#submit{
+    margin-bottom: 5%;
+}
