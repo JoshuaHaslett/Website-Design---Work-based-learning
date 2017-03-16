@@ -7,6 +7,7 @@
     <link href="css/navbar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="">
+    <link href="email.php">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/contact.css"> </head>
@@ -15,12 +16,10 @@
     <!--Navbar-->
     <div class="navBar">
         <div class="logo"> <img src="Images/logo.jpg"> </div>
-        <div class="navButtonContainer col-sm-offset-2 col-sm-8">
-            <btn class="navButton col-sm-3 col-xs-12" href="">Home</btn>
-            <btn class="navButton col-sm-3 col-xs-12" href="">Accreditation</btn>
-            <btn class="navButton col-sm-3 col-xs-12" href="">Testimonial</btn>
-            <btn class="navButton col-sm-3 col-xs-12" href="" id="selectedBtn">Contact</btn>
-        </div>
+        <div id="selected" class="leftNav buttonContainer col-sm-offset-2 col-sm-2 col-xs-12"> <p>Home</p> </div>
+        <div class="buttonContainer col-sm-2 col-xs-12"> <p>Accreditation</p> </div>
+        <div class="buttonContainer col-sm-2 col-xs-12"> <p>Testimonials</p></div>
+        <div  class="rightNav buttonContainer col-sm-2 col-xs-12"> <p>Contact</p> </div>
     </div>
     <!--body under nav bar-->
     <div class="contactContainer">
@@ -57,23 +56,16 @@
                 <div class="contactPanel col-sm-12">
                     <h1>Email enquiry</h1>
                     <hr></hr>
-                    <form class="col-sm-offset-1 col-sm-5"> <b>First name:</b>
-                        <br>
-                        <input type="text" name="firstname"> </form>
-                    <form class="col-sm-5"> <b>Telephone:</b>
-                        <br>
-                        <input type="text" name="firstname"> </form>
-                    <form class="col-sm-offset-1 col-sm-5"> <b>Subject:</b>
-                        <br>
-                        <input type="text" name="firstname"> </form>
-                    <form class="col-sm-5"> <b>Your email address:</b>
-                        <br>
-                        <input type="text" name="firstname"> </form>
-                    <form class="col-sm-10 col-sm-offset-1 "> <b>Enquiry:</b>
-                        <br>
-                        <textarea></textarea>
-                    </form>
+                    <form class="col-sm-offset-1 col-sm-5" required> 
+                        <input type="text" name="name" placeholder="name"> 
+                        <input type="text" name="telephone" placeholder="tel"> 
+                        <input type="text" name="subject" placeholder="sub"> 
+                        <input type="text" name="email" placeholder="email"> 
+                        <button name="sub" class="col-sm-offset-2 col-sm-8" >Submit</button>
+                    </form> 
                 </div>
+                <form action="mailto:haslett.j.l@gmail.com" method="post" enctype="text/plain">
+
             </div>
         </div>
     </div>
@@ -81,6 +73,7 @@
     <div class="footerBar">
         <p>Copyright LJC Construction 2017 ©</p>
     </div>
+    
     <!--Scripts-->
     <script>
         function myMap() {
@@ -105,3 +98,4 @@
 </body>
 
 </html>
+

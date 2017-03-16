@@ -10,75 +10,115 @@
     <link href="css/tabs.css" rel="stylesheet">
     <link href="css/projects.css" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/accreditation.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    s</head>
+    <link rel="stylesheet" href="css/screen.css">
+    <!--Firebase-->
+    <link rel="manifest" href="manifest.json"> </head>
 
 <body>
     <!--Navbar-->
-    <div class="navBar">
-        <div class="logo"> <img src="Images/logo.jpg"> </div>
-        <div class="navButtonContainer col-sm-offset-2 col-sm-8">
-            <btn class="navButton col-sm-3 col-xs-12" href="" id="selectedBtn">Home</btn>
-            <btn class="navButton col-sm-3 col-xs-12" href="">Accreditation</btn>
-            <btn class="navButton col-sm-3 col-xs-12" href="">Testimonial</btn>
-            <btn class="navButton col-sm-3 col-xs-12" href="">Contact</btn>
+    <div class="row"></div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="navBar">
+            <div class="logo"> <img src="Images/logo.jpg"> </div>
+            <div id="selected" class="buttonContainer col-sm-offset-2 col-sm-2 col-xs-12">
+                <p>Home</p>
+            </div>
+            <div class="buttonContainer col-sm-2 col-xs-12">
+                <p>Accreditation</p>
+            </div>
+            <div class="buttonContainer col-sm-2 col-xs-12">
+                <p>Testimonials</p>
+            </div>
+            <div class="buttonContainer col-sm-2 col-xs-12">
+                <p>Contact</p>
+            </div>
         </div>
     </div>
     <!--Slideshow-->
-    <div class="col-sm-offset-2 col-sm-8">
-        <div class="slideShow">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                    <li data-target="#myCarousel" data-slide-to="3"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active"> <img src="Images/slide1.jpg" alt="Image" width="460" height="345"> </div>
-                    <div class="item"> <img src="Images/slide2.jpg" alt="Image" width="460" height="345"> </div>
-                    <div class="item"> <img src="Images/slide3.jpg" alt="Image" width="460" height="345"> </div>
-                    <div class="item"> <img src="Images/slide4.jpg" alt="Image" width="460" height="345"> </div>
+    <div class="col-sm-offset-2 col-sm-8 col-xs-12">
+        <div class="row">
+            <div class="col-sm-12 no-padding">
+                <div class="slideShow">
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active"> <img src="Images/slide1.jpg" alt="Image" width="460" height="345"> </div>
+                            <div class="item"> <img src="Images/slide2.jpg" alt="Image" width="460" height="345"> </div>
+                            <div class="item"> <img src="Images/slide3.jpg" alt="Image" width="460" height="345"> </div>
+                            <div class="item"> <img src="Images/slide4.jpg" alt="Image" width="460" height="345"> </div>
+                        </div>
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
+                    </div>
                 </div>
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
             </div>
         </div>
     </div>
-    <!--Tabs-->
-    <div class="panelContainer col-sm-offset-2 col-sm-8">
-        <div class="panel col-sm-4"> <img src="Images/slide1.jpg">
-            <p>New Builds</p><i class="panelIcon fa fa-chevron-down" aria-hidden="true"></i> </div>
-        <div class="panel col-sm-4"> <img src="Images/slide2.jpg">
-            <p>Extensions</p><i class="panelIcon fa fa-chevron-down" aria-hidden="true"></i> </div>
-        <div class="panel col-sm-4"> <img src="Images/slide3.jpg">
-            <p>Refurbishments</p><i class="panelIcon fa fa-chevron-down" aria-hidden="true"></i> </div>
     </div>
+    <!--hidden-->
+    <div id="objective" class="accreditationEntry hidden visible-xs col-xs-10 col-xs-offset-1">
+        <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">SafeContractor - The fastest growing health and safety accreditation scheme in the UK</h1>
+        <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">SafeContractor is the fastest growing health and safety accreditation scheme in the UK, with more than 200 major clients and over 18,000 contractor members. Registered members with the safecontractor scheme include clients and contractors from a wide range of professional disciplines working within a number of industry sectors. With its increasing membership and growing profile in the UK, the safecontractor scheme is now used by many large organisations as a way of obtaining competent contractors.</p>
+    </div>
+    <!--Tabs-->
+   <div class="panelContainer col-sm-offset-2 col-sm-8 hidden-xs">
+            <div class="row">
+                <div class="col-sm-12 no-padding">
+                    <div id="newBuild" onclick="loadProjects('NewBuilds')" class="panel col-sm-4"> <img src="Images/slide1.jpg">
+                        <p>New Builds</p><i id="newBuildChevron"
+                        class="panelIcon fa fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                    <div onclick="loadProjects('Extensions')" class="panel col-sm-4"> <img src="Images/slide2.jpg">
+                        <p>Extensions</p><i  id="extensionChevron" class="panelIcon fa fa-chevron-down" aria-hidden="true"></i> 
+                    </div>
+                    <div onclick="loadProjects('Refurbishments')" class="panel col-sm-4"> <img src="Images/slide3.jpg">
+                        <p>Refurbishments</p><i  id="refurbishmentChevron" class="panelIcon fa fa-chevron-down" aria-hidden="true"></i> 
+                    </div>
+                </div>
+            </div>
+        </div>
     <!--Dynamic project-->
-    <div class="bottomContainer">
+    <div class="footer bottomContainer hidden-xs">
         <div class="goLeft col-sm-2">
-            <button>back</button>
+            <button id="back" onclick="loadPreviousProject()" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></button>
         </div>
         <div class="centre col-sm-8">
             <!--Dynamic project display pciture-->
-            <div class="displayPicture "> <img src="Images/slide1.jpg">
-                <h1>Project Name</h1> </div>
-            <div class="projectImages"> <img src="Images/slide1.jpg" alt="" class="col-sm-3"> <img src="Images/slide1.jpg" alt="" class="col-sm-3"> <img src="Images/slide1.jpg" alt="" class="col-sm-3"> <img src="Images/slide1.jpg" alt="" class="col-sm-3"> </div>
+            <div id="projectPicture" class="displayPicture "> <img id="mainImage" src="Images/black.jpg">
+                <h1 id="projectTitle"></h1> </div> <i id="loadingIcon" class="fa fa-spinner fa-pulse fa-3x fa-fw" aria-hidden="true"></i>
             <div class="textContainer">
-                <p id="description">Example work fasdf askdfsdf asdjfkjsdfkl jasdfkj lasdfj dkasfj lasdkfjdasjfklasjdfk asd fjlasdfjkldjasfklasjdfkl jasdfkjasdj djdjasf kldjasf klasjdflk </p>
+                <p id="projectDescription"></p>
             </div>
         </div>
-        <div class="goRight col-sm-2"> 
-            <button id="next">next</button>
+        <div class="goRight col-sm-2">
+            <button id="next" onclick="loadNextProject()" class="glyphicon glyphicon-chevron-right"></button>
         </div>
     </div>
-    
-    
     <div class="footerBar">
         <p>Copyright LJC Construction 2017 ©</p>
     </div>
-    
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAZ61cz6cjkoLjYSk4v6MMFKlQHYg4VonM"
+            , authDomain: "jlc-construction.firebaseapp.com"
+            , databaseURL: "https://jlc-construction.firebaseio.com"
+            , storageBucket: "jlc-construction.appspot.com"
+            , messagingSenderId: "199393681634"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
