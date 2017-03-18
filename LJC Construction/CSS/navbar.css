@@ -7,6 +7,10 @@
     overflow:hidden;
 }
 
+.btn{
+    border-radius: 0 !important;
+}
+
 .logo{
     text-align: center;
 }
@@ -19,15 +23,22 @@
     text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-.buttonContainer p{
-    font-size: 20px;
+    font-size: 20px !important;
     margin-bottom: 0;
     text-shadow: 0px 5px  5px black;
 }
 
+
 .buttonContainer:hover{
     background: linear-gradient(black, #353535); 
+    color: white !important;
+    
+}
+
+.buttonContainer:active{
+    background: black !important; 
+    color: white !important;
+    
 }
 
 #selected{
@@ -50,3 +61,5 @@
 
 .row{
 }
+
+

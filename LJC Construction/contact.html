@@ -14,66 +14,80 @@
 
 <body>
     <!--Navbar-->
-    <div class="navBar">
-        <div class="logo"> <img src="Images/logo.jpg"> </div>
-        <div id="selected" class="leftNav buttonContainer col-sm-offset-2 col-sm-2 col-xs-12"> <p>Home</p> </div>
-        <div class="buttonContainer col-sm-2 col-xs-12"> <p>Accreditation</p> </div>
-        <div class="buttonContainer col-sm-2 col-xs-12"> <p>Testimonials</p></div>
-        <div  class="rightNav buttonContainer col-sm-2 col-xs-12"> <p>Contact</p> </div>
-    </div>
-    <!--body under nav bar-->
-    <div class="contactContainer">
-        <div class="masterPanel col-sm-offset-2  col-sm-8">
-            <div class="generalDetails">
-                <!--left container-->
-                <div class="col-sm-6">
-                    <div class="contactPanel">
-                        <h1>Address</h1>
-                        <hr></hr>
-                        <p> <b>LJC (SW) Construction Ltd</b>
-                            <br> 42 Whidborne Avenue
-                            <br> Torquay
-                            <br> South Devon
-                            <br> TQ1 2PQ </p>
-                    </div>
-                    <div class="contactPanel">
-                        <h1>Contact information</h1>
-                        <hr></hr>
-                        <p> <font color="blue"> info@ljcconstruction.co.uk</font>
-                            <br> Tel: 01803 469671
-                            <br> Mobile: 07971 862175
-                            <br> VAT Reg No: 836 8954 71
-                            <br> Company Reg No: 5071855 </p>
-                    </div>
-                </div>
-                <!--Map-->
-                <div class="mapsContainer col-sm-6 hidden-xs">
-                <div id="map" class="maps"></div>
-                </div>
-            </div>
-            <!--Form-->
-            <div class="col-sm-12">
-                <div class="contactPanel col-sm-12">
-                    <h1>Email enquiry</h1>
-                    <hr></hr>
-                    <form class="col-sm-offset-1 col-sm-5" required> 
-                        <input type="text" name="name" placeholder="name"> 
-                        <input type="text" name="telephone" placeholder="tel"> 
-                        <input type="text" name="subject" placeholder="sub"> 
-                        <input type="text" name="email" placeholder="email"> 
-                        <button name="sub" class="col-sm-offset-2 col-sm-8" >Submit</button>
-                    </form> 
-                </div>
-                <form action="mailto:haslett.j.l@gmail.com" method="post" enctype="text/plain">
-
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="navBar">
+            <div class="logo"> <img src="Images/logo.jpg"> </div>
+            <div class="row">
+            <a href="index.html" class="btn buttonContainer col-sm-offset-2 col-sm-2 col-xs-12">Home
+            </a>
+            <a href="accreditation.html" class="btn buttonContainer col-sm-2 col-xs-12" onclick="accreditation.html">Accreditation
+            </a>
+            <a href="testimonials.html" class="btn buttonContainer col-sm-2 col-xs-12">
+                Testimonials
+            </a>
+            <div id="selected" class="btn buttonContainer col-sm-2 col-xs-12">
+                Contact
             </div>
         </div>
+        </div>
+    </div>
+    
+    <!--body under nav bar-->
+    <div class="contactContainer">
+        <div class="row">
+            <div class="masterPanel col-sm-offset-2  col-sm-8 no-padding">
+                <div class="row">
+                    <div class="generalDetails no-padding">
+                        <!--left container-->
+                        <div class="col-sm-6">
+                            <div class="contactPanel">
+                                <h1>Address</h1>
+                                <hr></hr>
+                                <p> <b>LJC (SW) Construction Ltd</b>
+                                    <br> 42 Whidborne Avenue
+                                    <br> Torquay
+                                    <br> South Devon
+                                    <br> TQ1 2PQ </p>
+                            </div>
+                            <div class="contactPanel">
+                                <h1>Contact information</h1>
+                                <hr></hr>
+                                <p> <font color="blue"> info@ljcconstruction.co.uk</font>
+                                    <br> Tel: 01803 469671
+                                    <br> Mobile: 07971 862175
+                                    <br> VAT Reg No: 836 8954 71
+                                    <br> Company Reg No: 5071855 </p>
+                            </div>
+                        </div>
+                        <!--Map-->
+                        <div class="mapsContainer col-sm-6 hidden-xs">
+                            <div id="map" class="maps"></div>
+                        </div>
+                    </div>
+                    <!--Form-->
+                    <div class="col-sm-12">
+                        <div class="contactPanel col-sm-12">
+                            <h1>Email enquiry</h1>
+                            <hr></hr>
+                            <form class="col-sm-offset-1 col-sm-5" required>
+                                <input type="text" name="name" placeholder="name">
+                                <input type="text" name="telephone" placeholder="tel">
+                                <input type="text" name="subject" placeholder="sub">
+                                <input type="text" name="email" placeholder="email">
+                                <button name="sub" class="col-sm-offset-2 col-sm-8">Submit</button>
+                            </form>
+                        </div>
+                        <form action="mailto:haslett.j.l@gmail.com" method="post" enctype="text/plain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <!--Footer-->
     <div class="footerBar">
         <p>Copyright LJC Construction 2017 ©</p>
     </div>
-    
     <!--Scripts-->
     <script>
         function myMap() {
@@ -98,4 +112,3 @@
 </body>
 
 </html>
-

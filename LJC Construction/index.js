@@ -200,7 +200,7 @@ function loadPreviousProject() {
     }).catch(function (error) {
         projectTitle.innerHTML = currentProject.name;
         projectDescription.innerHTML = currentProject.description;
-        document.getElementById("loadingIcon").style.visibility = "hidden";
+        document.getElementById("loadContainer").style.display='none';
         projectPicture.src = "Images/default.jpg";
     });
 }

@@ -9,37 +9,62 @@
     <link rel="stylesheet" href="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/testimonials.css"> </head>
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="manifest" href="manifest.json">
+</head>
 
 <body>
     <!--Navbar-->
-    <!--Navbar-->
-    <div class="navBar">
-        <div class="logo"> <img src="Images/logo.jpg"> </div>
-        <div id="selected" class="leftNav buttonContainer col-sm-offset-2 col-sm-2 col-xs-12"> <p>Home</p> </div>
-        <div class="buttonContainer col-sm-2 col-xs-12"> <p>Accreditation</p> </div>
-        <div class="buttonContainer col-sm-2 col-xs-12"> <p>Testimonials</p></div>
-        <div  class="rightNav buttonContainer col-sm-2 col-xs-12"> <p>Contact</p> </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+        <div class="navBar">
+            <div class="logo"> <img src="Images/logo.jpg"> </div>
+            <div class="row">
+            <a href="index.html" class="btn buttonContainer col-sm-offset-2 col-sm-2 col-xs-12">Home
+            </a>
+            <a href="accreditation.html" class="btn buttonContainer col-sm-2 col-xs-12" onclick="accreditation.html">Accreditation
+            </a>
+            <div id="selected" class="btn buttonContainer col-sm-2 col-xs-12">
+                Testimonials
+            </div>
+            <a href="contact.html"class="btn buttonContainer col-sm-2 col-xs-12">
+                Contact
+            </a>
+        </div>
+        </div>
     </div>
+  
     <!---->
-    <div class="testimonialsContainer">
+    <div class="testimonialsContainer no-padding">
         <!---->
-        <div class="col-sm-offset-2  col-sm-8">
-            <div class="testimonialEntry">
-                <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><b><font color="blue">"</font></b>From the first contact with Richard and his team I can honestly say that they have been nothing less than first rate. We agreed a time scale and both signed a contract for the works we had agreed. When work on our site started I found his staff and any sub-contractors to be very polite and nothing was too much trouble.<b><font color="blue">"</font></b></p>
-                <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">Mr R Austin, Maidencombe</h1> </div>
-            <div class="testimonialEntry">
-                <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><b><font color="blue">"</font></b>In all things, LJC has been open and fair regarding costs, particularly as our lists of adjustments grew. Final invoices reflected original estimates and the costs of all works were at all times totally transparent. We would recommend Richard and his team without hesitation.<b><font color="blue">"</font></b></p>
-                <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">Dr Bown, Torbay</h1> </div>
-            <div class="testimonialEntry">
-                <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><b><font color="blue">"</font></b>Nothing was too much trouble for LJC Construction in the building of our new house. We have a shared access driveway and they were always able to keep everything tidy and out of the way. We hardly knew they were there. As for the final result – we were amazed at the quality and high level of finish. I would recommend them to anyone.<b><font color="blue">"</font></b></p>
-                <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">Mr Lowe, Torbay</h1> </div>
-            <div class="testimonialEntry">
-                <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><b><font color="blue">"</font></b>If you need a builder who pays serious attention to detail and is able to take a very difficult site and make things happen, then look no further than LJC Construction. This is the second house they have built for me and I am currently looking for another site – need I say more?<b><font color="blue">"</font></b></p>
-                <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">Mrs Grice, South Devon</h1> </div>
-            <div class="testimonialEntry">
-                <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><b><font color="blue">"</font></b>Richard and his team carried out the work to a very high standard and was completed to schedule within the terms of our contract. I was very pleased with the professional conduct that was demonstrated. Any issues that arose during the project were dealt with expediently, expertly and with utmost courtesy. I would have no hesitation to recommend this company without reservation.<b><font color="blue">"</font></b></p>
-                <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">Mr Sage, Torbay</h1> </div>
+        <div class="row no-padding">
+            <div id="addTestimonialContainer" class=" col-sm-offset-2  col-sm-8">
+                <div class="row ">
+                    <div class="testimonialEntry">
+                        <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><b><font color="blue">"</font></b>From the first contact with Richard and his team I can honestly say that they have been nothing less than first rate. We agreed a time scale and both signed a contract for the works we had agreed. When work on our site started I found his staff and any sub-contractors to be very polite and nothing was too much trouble.<b><font color="blue">"</font></b></p>
+                        <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">Mr R Austin, Maidencombe</h1> </div>
+                </div>
+                <div class="row ">
+                    <div class="testimonialEntry">
+                        <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><b><font color="blue">"</font></b>In all things, LJC has been open and fair regarding costs, particularly as our lists of adjustments grew. Final invoices reflected original estimates and the costs of all works were at all times totally transparent. We would recommend Richard and his team without hesitation.<b><font color="blue">"</font></b></p>
+                        <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">Dr Bown, Torbay</h1> </div>
+                </div>
+                <div class="row ">
+                    <div class="testimonialEntry">
+                        <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><b><font color="blue">"</font></b>Nothing was too much trouble for LJC Construction in the building of our new house. We have a shared access driveway and they were always able to keep everything tidy and out of the way. We hardly knew they were there. As for the final result – we were amazed at the quality and high level of finish. I would recommend them to anyone.<b><font color="blue">"</font></b></p>
+                        <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">Mr Lowe, Torbay</h1> </div>
+                </div>
+                <div class="row ">
+                    <div class="testimonialEntry">
+                        <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><b><font color="blue">"</font></b>If you need a builder who pays serious attention to detail and is able to take a very difficult site and make things happen, then look no further than LJC Construction. This is the second house they have built for me and I am currently looking for another site – need I say more?<b><font color="blue">"</font></b></p>
+                        <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">Mrs Grice, South Devon</h1> </div>
+                </div>
+                <div class="row">
+                    <div class="testimonialEntry">
+                        <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1"><b><font color="blue">"</font></b>Richard and his team carried out the work to a very high standard and was completed to schedule within the terms of our contract. I was very pleased with the professional conduct that was demonstrated. Any issues that arose during the project were dealt with expediently, expertly and with utmost courtesy. I would have no hesitation to recommend this company without reservation.<b><font color="blue">"</font></b></p>
+                        <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">Mr Sage, Torbay</h1> </div>
+                </div>
+            </div>
+            <div class="loadContainer"> <i id="loadMoreBtn" class="fa fa-chevron-down" onclick="loadTestimonials()"></i> </div>
         </div>
     </div>
     <!--Footer-->
@@ -47,6 +72,20 @@
         <p>Copyright LJC Construction 2017 ©</p>
     </div>
     <!--Scripts-->
+    <!--Firebase-->
+    <script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAZ61cz6cjkoLjYSk4v6MMFKlQHYg4VonM"
+            , authDomain: "jlc-construction.firebaseapp.com"
+            , databaseURL: "https://jlc-construction.firebaseio.com"
+            , storageBucket: "jlc-construction.appspot.com"
+            , messagingSenderId: "199393681634"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="testimonial.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

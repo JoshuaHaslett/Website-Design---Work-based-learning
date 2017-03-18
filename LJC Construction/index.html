@@ -19,25 +19,27 @@
 
 <body>
     <!--Navbar-->
-    <div class="row"></div>
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padding">
+    <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="navBar">
             <div class="logo"> <img src="Images/logo.jpg"> </div>
-            <div id="selected" class="buttonContainer col-sm-offset-2 col-sm-2 col-xs-12">
-                <p>Home</p>
+            <div class="row">
+            <div id="selected" class="btn buttonContainer col-sm-offset-2 col-sm-2 col-xs-12">Home
             </div>
-            <div class="buttonContainer col-sm-2 col-xs-12">
-                <p>Accreditation</p>
-            </div>
-            <div class="buttonContainer col-sm-2 col-xs-12">
-                <p>Testimonials</p>
-            </div>
-            <div class="buttonContainer col-sm-2 col-xs-12">
-                <p>Contact</p>
-            </div>
+            <a href="accreditation.html" class="btn buttonContainer col-sm-2 col-xs-12" onclick="accreditation.html">Accreditation
+            </a>
+            <a href="testimonials.html" class="btn buttonContainer col-sm-2 col-xs-12">
+                Testimonials
+            </a>
+            <a href="contact.html" class="btn buttonContainer col-sm-2 col-xs-12">
+                Contact
+            </a>
+        </div>
         </div>
     </div>
+    </div>
     <!--Slideshow-->
+    <div class="row">
     <div class="col-sm-offset-2 col-sm-8 col-xs-12">
         <div class="row">
             <div class="col-sm-12 no-padding">
@@ -63,12 +65,15 @@
         </div>
     </div>
     </div>
+    </div>
     <!--hidden-->
+    
     <div id="objective" class="accreditationEntry hidden visible-xs col-xs-10 col-xs-offset-1">
         <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">SafeContractor - The fastest growing health and safety accreditation scheme in the UK</h1>
         <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">SafeContractor is the fastest growing health and safety accreditation scheme in the UK, with more than 200 major clients and over 18,000 contractor members. Registered members with the safecontractor scheme include clients and contractors from a wide range of professional disciplines working within a number of industry sectors. With its increasing membership and growing profile in the UK, the safecontractor scheme is now used by many large organisations as a way of obtaining competent contractors.</p>
     </div>
     <!--Tabs-->
+    <div class="row">
    <div class="panelContainer col-sm-offset-2 col-sm-8 hidden-xs">
             <div class="row">
                 <div class="col-sm-12 no-padding">
@@ -85,13 +90,16 @@
                 </div>
             </div>
         </div>
+        </div>
     <!--Dynamic project-->
+    <div class="row">
     <div class="footer bottomContainer hidden-xs">
         <div class="goLeft col-sm-2">
             <button id="back" onclick="loadPreviousProject()" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></button>
         </div>
         <div class="centre col-sm-8">
             <!--Dynamic project display pciture-->
+            
             <div id="projectPicture" class="displayPicture "> <img id="mainImage" src="Images/black.jpg">
                 <h1 id="projectTitle"></h1> </div> <i id="loadingIcon" class="fa fa-spinner fa-pulse fa-3x fa-fw" aria-hidden="true"></i>
             <div class="textContainer">
@@ -101,6 +109,7 @@
         <div class="goRight col-sm-2">
             <button id="next" onclick="loadNextProject()" class="glyphicon glyphicon-chevron-right"></button>
         </div>
+    </div>
     </div>
     <div class="footerBar">
         <p>Copyright LJC Construction 2017 ©</p>
