@@ -35,3 +35,13 @@
 #objective{
     margin-top: 20px;
 }
+
+#loadTopBtn{
+    width: 100%;
+    text-align:center;
+    align-content: center;
+    margin-bottom: 30px;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}

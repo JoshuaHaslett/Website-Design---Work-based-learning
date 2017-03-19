@@ -62,4 +62,19 @@
 .row{
 }
 
+#facbook{
+   position: fixed;
+   bottom: 0px;
+    right: 34px;
+    overflow: hidden;
+    margin-bottom: 22px;
+    height: 30px
+}
 
+#google{
+    position: fixed;
+   bottom: 0px;
+    right: 2px;
+    overflow: hidden;
+    margin-bottom: 22px;
+}

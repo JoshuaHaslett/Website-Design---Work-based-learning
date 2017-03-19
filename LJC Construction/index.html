@@ -20,97 +20,93 @@
 <body>
     <!--Navbar-->
     <div class="row">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="navBar">
-            <div class="logo"> <img src="Images/logo.jpg"> </div>
-            <div class="row">
-            <div id="selected" class="btn buttonContainer col-sm-offset-2 col-sm-2 col-xs-12">Home
-            </div>
-            <a href="accreditation.html" class="btn buttonContainer col-sm-2 col-xs-12" onclick="accreditation.html">Accreditation
-            </a>
-            <a href="testimonials.html" class="btn buttonContainer col-sm-2 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="navBar">
+                <div class="logo"> <img src="Images/logo.jpg" />
+                
+                </div>
+                <div class="row">
+                    <div id="selected" class="btn buttonContainer col-sm-offset-2 col-sm-2 col-xs-12">Home </div> <a href="accreditation.html" class="btn buttonContainer col-sm-2 col-xs-12" onclick="accreditation.html">Accreditation
+            </a> <a href="testimonials.html" class="btn buttonContainer col-sm-2 col-xs-12">
                 Testimonials
-            </a>
-            <a href="contact.html" class="btn buttonContainer col-sm-2 col-xs-12">
+            </a> <a href="contact.html" class="btn buttonContainer col-sm-2 col-xs-12">
                 Contact
-            </a>
+            </a> </div>
+            </div>
         </div>
-        </div>
-    </div>
     </div>
     <!--Slideshow-->
     <div class="row">
-    <div class="col-sm-offset-2 col-sm-8 col-xs-12">
-        <div class="row">
-            <div class="col-sm-12 no-padding">
-                <div class="slideShow">
-                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#myCarousel" data-slide-to="1"></li>
-                            <li data-target="#myCarousel" data-slide-to="2"></li>
-                            <li data-target="#myCarousel" data-slide-to="3"></li>
-                        </ol>
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active"> <img src="Images/slide1.jpg" alt="Image" width="460" height="345"> </div>
-                            <div class="item"> <img src="Images/slide2.jpg" alt="Image" width="460" height="345"> </div>
-                            <div class="item"> <img src="Images/slide3.jpg" alt="Image" width="460" height="345"> </div>
-                            <div class="item"> <img src="Images/slide4.jpg" alt="Image" width="460" height="345"> </div>
+        <div class="col-sm-offset-2 col-sm-8 col-xs-12">
+            <div class="row">
+                <div class="col-sm-12 no-padding">
+                    <div class="slideShow">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                <li data-target="#myCarousel" data-slide-to="3"></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active"> <img src="Images/slide1.jpg" alt="Image" width="460" height="345"> </div>
+                                <div class="item"> <img src="Images/slide2.jpg" alt="Image" width="460" height="345"> </div>
+                                <div class="item"> <img src="Images/slide3.jpg" alt="Image" width="460" height="345"> </div>
+                                <div class="item"> <img src="Images/slide4.jpg" alt="Image" width="460" height="345"> </div>
+                            </div>
+                            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
+                            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
                         </div>
-                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a>
-                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span> </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     </div>
-    </div>
     <!--hidden-->
-    
     <div id="objective" class="accreditationEntry hidden visible-xs col-xs-10 col-xs-offset-1">
         <h1 class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">SafeContractor - The fastest growing health and safety accreditation scheme in the UK</h1>
         <p class="col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">SafeContractor is the fastest growing health and safety accreditation scheme in the UK, with more than 200 major clients and over 18,000 contractor members. Registered members with the safecontractor scheme include clients and contractors from a wide range of professional disciplines working within a number of industry sectors. With its increasing membership and growing profile in the UK, the safecontractor scheme is now used by many large organisations as a way of obtaining competent contractors.</p>
     </div>
     <!--Tabs-->
     <div class="row">
-   <div class="panelContainer col-sm-offset-2 col-sm-8 hidden-xs">
-            <div class="row">
+        <div class="panelContainer col-sm-offset-2 col-sm-8 hidden-xs">
+            <div class="row ">
                 <div class="col-sm-12 no-padding">
                     <div id="newBuild" onclick="loadProjects('NewBuilds')" class="panel col-sm-4"> <img src="Images/slide1.jpg">
-                        <p>New Builds</p><i id="newBuildChevron"
-                        class="panelIcon fa fa-chevron-down" aria-hidden="true"></i>
-                    </div>
+                        <p>New Builds</p><i id="newBuildChevron" class="panelIcon fa fa-chevron-down" aria-hidden="true"></i> </div>
                     <div onclick="loadProjects('Extensions')" class="panel col-sm-4"> <img src="Images/slide2.jpg">
-                        <p>Extensions</p><i  id="extensionChevron" class="panelIcon fa fa-chevron-down" aria-hidden="true"></i> 
-                    </div>
+                        <p>Extensions</p><i id="extensionChevron" class="panelIcon fa fa-chevron-down" aria-hidden="true"></i> </div>
                     <div onclick="loadProjects('Refurbishments')" class="panel col-sm-4"> <img src="Images/slide3.jpg">
-                        <p>Refurbishments</p><i  id="refurbishmentChevron" class="panelIcon fa fa-chevron-down" aria-hidden="true"></i> 
-                    </div>
+                        <p>Refurbishments</p><i id="refurbishmentChevron" class="panelIcon fa fa-chevron-down" aria-hidden="true"></i> </div>
                 </div>
             </div>
         </div>
-        </div>
+    </div>
     <!--Dynamic project-->
     <div class="row">
-    <div class="footer bottomContainer hidden-xs">
-        <div class="goLeft col-sm-2">
-            <button id="back" onclick="loadPreviousProject()" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></button>
-        </div>
-        <div class="centre col-sm-8">
-            <!--Dynamic project display pciture-->
-            
-            <div id="projectPicture" class="displayPicture "> <img id="mainImage" src="Images/black.jpg">
-                <h1 id="projectTitle"></h1> </div> <i id="loadingIcon" class="fa fa-spinner fa-pulse fa-3x fa-fw" aria-hidden="true"></i>
-            <div class="textContainer">
-                <p id="projectDescription"></p>
+        <div class="footer bottomContainer hidden-xs">
+            <div class="goLeft col-sm-2">
+                <button id="back" onclick="loadPreviousProject()" class="glyphicon glyphicon-chevron-left" aria-hidden="true"></button>
+            </div>
+            <div class="centre col-sm-8">
+                <!--Dynamic project display pciture-->
+                <div id="projectPicture" class="displayPicture "> <img id="mainImage" src="Images/black.jpg">
+                    <h1 id="projectTitle"></h1> </div> <i id="loadingIcon" class="fa fa-spinner fa-pulse fa-3x fa-fw" aria-hidden="true"></i>
+                <div class="textContainer">
+                    <p id="projectDescription"></p>
+                </div>
+            </div>
+            <div class="goRight col-sm-2">
+                <button id="next" onclick="loadNextProject()" class="glyphicon glyphicon-chevron-right"></button>
             </div>
         </div>
-        <div class="goRight col-sm-2">
-            <button id="next" onclick="loadNextProject()" class="glyphicon glyphicon-chevron-right"></button>
-        </div>
     </div>
-    </div>
+    <a id="facbook" target="_blank" title="find us on Facebook" href="https://www.facebook.com/LjcConstruction/"><img alt="follow me on facebook" src="//login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
+    
+    <a id="google" target="_blank" title="follow me on google plus" href="https://plus.google.com/u/0/117505766985101659217"><img alt="follow me on google plus" src="https://c866088.ssl.cf3.rackcdn.com/assets/googleplus30x30.png" border=0></a>
+
+
     <div class="footerBar">
         <p>Copyright LJC Construction 2017 ©</p>
     </div>
@@ -128,7 +124,6 @@
         firebase.initializeApp(config);
     </script>
     <script src="index.js"></script>
-    <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
