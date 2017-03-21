@@ -5,8 +5,8 @@
 }
 .maps{
     margin-top: 10px;
-    box-shadow: 0px 5px 20px black; 
-    height: 406px;
+    box-shadow: 0px 3px 10px black; 
+    height: 337px;
     border-radius: 10px;
 }
 .masterPanel{
@@ -19,11 +19,14 @@
 .contactPanel{
     margin-top: 10px;
     height: 100%;
-    box-shadow: 0px 5px 20px black;  
+    box-shadow: 0px 3px 10px black;  
     background: white;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     overflow: hidden;
+}
+#email{
+    
 }
 
 h1{
@@ -31,6 +34,8 @@ h1{
     font-size: 24px;
     text-align: center;
     color: darkblue;
+    margin-bottom: 5px;
+    margin-top:  5px !important;
 }
 
 hr{
@@ -38,7 +43,7 @@ hr{
     border-bottom-width: 1px;
     margin: 0px 50px 0px 50px;
     color: grey;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .contactPanel p {
@@ -66,4 +71,47 @@ textarea {
 
 #submit{
     margin-bottom: 5%;
+}
+
+input{
+    margin-bottom: 10px;
+}
+
+textArea{
+    height: 70px;
+    line-height: inherit;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+#subBtn{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.redPlaceHolder::-webkit-input-placeholder {
+    color: #ff8989;
+}
+
+@media screen and (min-width: 768px) {
+    
+    .no-padding-right{
+    padding-right: 0px !important;
+}
+
+.no-padding-left{
+    padding-left: 0px !important;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+    #emailContainer{
+        margin-bottom: 60px;
+    }
+    
+    textArea{
+        margin: 
+
+    }
 }
