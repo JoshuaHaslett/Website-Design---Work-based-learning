@@ -79,12 +79,18 @@ function loadProjects(projectType) {
         $('html, body').animate({
             scrollTop: $(document).height()
         }, 'slow');
+        $("#objectiveVisible").toggleClass('hidden');
     }
     else if ($("#extensionChevron").hasClass('fa-chevron-down') && $("#newBuildChevron").hasClass('fa-chevron-down') && $("#refurbishmentChevron").hasClass('fa-chevron-down')) {
-        $(".bottomContainer").slideUp("slow");
+        $(".bottomContainer").slideUp('slow', function() {
+        $("#objectiveVisible").toggleClass('hidden');
+        });
         projectVisibility = false;
+        
+
     }
     if (check) {
+        
         return fireBaseRef.child(projectType).once('value').then(function (snapshot) {
             snapshot.forEach(function (child) {
                 //get data
@@ -124,6 +130,15 @@ function loadNextProject() {
         if (count < newBuilds.length - 1) {
             count++;
             document.getElementById("loadingIcon").style.visibility = "visible";
+            if($("#back").hasClass('hidden')){
+                $("#back").toggleClass('hidden');
+            }
+            if(count == newBuilds.length - 1){
+                if(!$("#next").hasClass('hidden')){
+                    $("#next").toggleClass('hidden');
+            }
+
+    }
         }
         currentProject = newBuilds[count];
         break;
@@ -131,6 +146,14 @@ function loadNextProject() {
         if (count < extensions.length - 1) {
             count++;
             document.getElementById("loadingIcon").style.visibility = "visible";
+            if($("#back").hasClass('hidden')){
+                $("#back").toggleClass('hidden');
+            }
+            if(count == extensions.length - 1){
+                if(!$("#next").hasClass('hidden')){
+                    $("#next").toggleClass('hidden');
+            }
+        }
         }
         currentProject = extensions[count];
         break;
@@ -138,6 +161,15 @@ function loadNextProject() {
         if (count < refurbishments.length - 1) {
             count++;
             document.getElementById("loadingIcon").style.visibility = "visible";
+            if($("#back").hasClass('hidden')){
+                $("#back").toggleClass('hidden');
+            }
+            if(count == refurbishments.length - 1){
+                if(!$("#next").hasClass('hidden')){
+                    $("#next").toggleClass('hidden');
+            }
+            
+        }
         }
         currentProject = refurbishments[count];
         break;
@@ -185,12 +217,24 @@ function loadPreviousProject() {
         if (count != 0) {
             count--;
             document.getElementById("loadingIcon").style.visibility = "visible";
+            
         }
         currentProject = refurbishments[count];
         break;
     default:
         break;
     }
+    
+    if(count < 1){
+        if(!$("#back").hasClass('hidden')){
+                $("#back").toggleClass('hidden');
+            }
+
+    }
+    if($("#next").hasClass('hidden')){
+                $("#next").toggleClass('hidden');
+        }
+    
     //set image
     storageRef.child("images").child(currentProject.image).getDownloadURL().then(function (url) {
         projectTitle.innerHTML = currentProject.name;

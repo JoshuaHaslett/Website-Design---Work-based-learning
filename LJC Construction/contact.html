@@ -3,7 +3,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['telephone'])
     $name = $_POST['name'];
     $email = $_POST['email'];
     $telephone = $_POST['telephone'];
-    $to = 'richard@ljcconstruction.co.uk';
+    $to = 'info@ljcconstruction.co.uk';
     $subject = $_POST['subject'];
     $query = $_POST['query'];
 
@@ -21,7 +21,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['telephone'])
             echo '</script>';
         } else{
             echo '<script language="javascript">';
-            echo 'alert("We werent able to process your email, please contact us directly at richard@ljcconstruction.co.uk")';
+            echo 'alert("We werent able to process your email, please contact us directly at info@ljcconstruction.co.uk")';
             echo '</script>';
         }
     }
@@ -67,10 +67,10 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['telephone'])
                                     <h1>Address</h1>
                                     <hr></hr>
                                     <p> <b>LJC (SW) Construction Ltd</b>
-                                        <br> 42 Whidborne Avenue
+                                        <br> 197 Windsor Road
                                         <br> Torquay
                                         <br> South Devon
-                                        <br> TQ1 2PQ </p>
+                                        <br> TQ1 1SP </p>
                                 </div>
                                 <div class="contactPanel">
                                     <h1>Contact information</h1>
@@ -128,7 +128,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['telephone'])
         <!--Scripts-->
         <script>
             function myMap() {
-                var myCenter = new google.maps.LatLng(50.462875, -3.494791);
+                var myCenter = new google.maps.LatLng(50.471558, -3.515529);
                 var mapCanvas = document.getElementById("map");
                 var mapOptions = {
                     center: myCenter

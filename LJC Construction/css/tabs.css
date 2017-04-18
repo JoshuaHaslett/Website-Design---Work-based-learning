@@ -37,3 +37,17 @@
     width: 10%;
     color: white;
 }
+
+
+
+.aboutUsEntry h1{
+    color: darkblue;
+    font-size: 18px;
+    text-align: center
+}
+
+.aboutUsEntry p{
+    font-size: 13px;
+    text-align: center;
+     
+}
