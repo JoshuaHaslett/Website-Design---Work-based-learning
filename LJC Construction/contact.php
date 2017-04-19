@@ -1,4 +1,4 @@
-<!--<?php
+<?php
 if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['telephone']) && isset($_POST['subject']) && isset($_POST['query'])){
     $name = $_POST['name'];
     $email = $_POST['email'];
@@ -6,6 +6,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['telephone'])
     $to = 'info@ljcconstruction.co.uk';
     $subject = $_POST['subject'];
     $query = $_POST['query'];
+    $query .= "<br><br>"."Contact No: ".$telephone;
 
         //headers
         $headers = "From: ".$name." <".$email.">\r\n";
@@ -26,7 +27,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['telephone'])
         }
     }
 
-?> -->
+?> 
     <!DOCTYPE html> 
     <html>
 
